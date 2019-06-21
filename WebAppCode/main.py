@@ -22,12 +22,12 @@ def searchGenerator():
     global fullURL
     global PDFs
     #used here for testing purposes, will be pulled from page in reality
-    filterDictionary = {"service_ss": "Asset Management Services"}
+    filterDictionary = {"service_ss": ["Asset Management Services", "Assessment Services"], "industry_ss": ["Food and Beverage"]}
     keyword = "voltage"
     
     fullURL = urlCreator(keyword, filterDictionary)
     #Delay before running the function to give the javascript of the page time to load in 
-    time.sleep(3)
+    time.sleep(5)
     
     #Creates an invisible browser (headless) to load the page manually (allows JS to render) and then pulls in all the relevant links
     options = Options()
@@ -40,6 +40,7 @@ def searchGenerator():
     for tag in tags:
         if (tag.get_attribute("href") != None):
             PDFs.append(tag.get_attribute("href"))
+        print(PDFs)
     return redirect(url_for("results"))
 
 @app.route('/Results')
@@ -56,10 +57,10 @@ def results():
 def urlCreator(keyword, filterDictionary):
     #First part of the URL
     urlStart = "https://www.rockwellautomation.com/search/ra_en_NA;keyword="
+
     #Browser automatically handles the rendering of keyword input
     #I want to be given a dictionary for the filters where the filter category is the key and all the entered filter types are the values
     filterSection = ""
-    numCategories = len(filterDictionary)
     dictPosCounter = 0
     for filterCategory, filterTypeList in filterDictionary.items():
         #Creating a filter chucnk for each filter category, add them all together at end
@@ -68,11 +69,12 @@ def urlCreator(keyword, filterDictionary):
         numFilters = len(filterTypeList)
         for filter in filterTypeList:
             #applying custom url codes derived from pattern analysis
-            filter.replace(" ", "%2520")
-            filter.replace("/", "%252F")
+            filter = filter.replace(" ", "%2520")
+            filter = filter.replace("/", "%252F")
+            print("FILTER IS " + filter)
             #if you're on the last one, end it
             if (counter == numFilters - 1):
-                filterBody += (filter + "%2552%2529")
+                filterBody += (filter + "%2522%2529")
                 counter += 1
             #add an or statement and go on to the next
             else:
@@ -84,12 +86,10 @@ def urlCreator(keyword, filterDictionary):
             filterHeader = "%253B" + filterCategory + "%253A%2528%2522"
         filterSection += (filterHeader + filterBody)
         dictPosCounter += 1
-    finalURL = urlStart + keyword + ";activeTab=Literature;" + filterSection
+    finalURL = urlStart + keyword + ";startIndex=0;activeTab=Literature;spellingCorrect=true;" + "facets=" + filterSection + ";languages=en;locales=en_NA,en_GLOBAL;sort=bma;"
     print(finalURL)
     return finalURL
-        
-        
 
 
-
-
+#Works https://www.rockwellautomation.com/search/ra_en_NA;keyword=voltage;startIndex=0;activeTab=Literature;spellingCorrect=true;facets=service_ss%253A%2528%2522Asset%2520Management%2520Services%2522%2529;languages=en;locales=en_NA,en_GLOBAL;sort=bma
+#Tests https://www.rockwellautomation.com/search/ra_en_NA;keyword=voltage;startIndex=0;activeTab=Literature;spellingCorrect=true;facets=service_ss%253A%2528%2522Asset%2520Management%2520Services%2552%2529;languages=en;locales=en_NA,en_GLOBAL;sort=bma
