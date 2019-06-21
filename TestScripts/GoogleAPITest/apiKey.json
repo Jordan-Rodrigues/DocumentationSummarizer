@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pelagic-firefly-244314",
+  "private_key_id": "7b25d9a6795ea7fc1adf7aa9993df2eaa112a29b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCc6CIpsZeIvBGb\nnuJ8uLwpbdW9pcJrW6pKJl1NTx1oiSjFDv8AQKfH6h4Cclf5J9FnHxI0ND58cca7\nj3Nirv3bOXfH83KkaXxUUfPqrZKqoSyS13xhpFTc8p/ZhOMDPiIx0jtwqHnRPPLy\nJNxgoCPiQ+T7WwZtkFo3don4lXQDoEnbPC0zsWvhQb34VIwEpVBDd2EsPQ+0fdOJ\n5TaDoIo5B28izffx8NkUFe3Ga6WdX4MmsyHegoNBFX9qqD/p1Juz40O3FIEJcZzF\n0KxfKC8KeG3gb4uOP9FWMmdV6IpTdKKOzBI3tusEbVE7qtwQu+a7dzCV7Fc5iorZ\nkaUUjCChAgMBAAECggEAAPx+U8MWTV1LMwqMW+tOKO2g5nJ7756BsK/LDNSEXO1q\n/ejWqZgGIX4D7v8fpbl/l1tGCy40QG4Bs4SGPvTB7HkOcg64JK9kQ653FBcW/JGX\n/uUa1DZMWmzMz42VxVP3qJRGVJPNGN6c2cfFnedQmNSDYwx1jPcAaOWP+naRPV1i\nuVCgdJbWDtTsFfw87BraHMqr9cL8fdMlEX0IHnoBTCmuUTAMx7xo5j1elg3anCUN\n7Dr+wQq+CrMFu+FvF8WUnqGigBaGIF4Rk1VWkiKB4uo5pj6ySEjC9Xx84ezUhfbQ\nf+8SBjaRFlBeSformfmLZCs/un6WgW2sSJCtKAs4EQKBgQDb9B2/WBMHJqTX9bFx\n4hu60OsCuBXXzwLw2E5Z9B/ZhcRZy3LkIsOsUkJOhQGPcKYj+D5xRmVzTdMo4cSM\nd6kPas9S+d/3/wALkAj3Fj06OsQEGokehYiLfnt9P4opyPU9ZgKvlnMCWW/+CZ/e\nUKydgQCsgo8HapTkrNEQ68IW7QKBgQC2nvcmItnfDoRRDSYt+zSDWXPqQJvWk0GO\nwa8d/apXaOdpXT4QiXWcQj5kCDGr8AiZHp+Tz9UMxH0N0Hjbr37yo2YCnAGeol8P\nO5NenRV/eTVXtVRWjPn2K/mMyrWLbClNIUxoEkUQg076SrBaDX9P0cp4pt3rszU2\nhPG4OfSmBQKBgBo8NuQg1DwxHs5njt+/kYEp9C4h2PEhzv79PfM6zCW879uqCa0u\nfFpsgV4uPS5nyFlX/dKzC9zB9qLUswXyK+cb3VjPVyiUcOPwLTGTpH/yjHjU1XAf\ni1bgIkihMJClWKMXLNDWyCcKlfIeIcR5qO0sevEYrYi77MCN4G39QOxNAoGBAK8Z\noLPKOsiq7KeiSfdQo7tFa+Ux6bpGG1e70iKZdFi3Vxspsja89i3LPnM/gBDx5+yY\n9j0Ny6OgSp+SQi+yB7Cyhz79QnhOC4NZhiXzzAcbus/MJ3+NUKZ+55ndS1DRdpBj\n2xT2X45DuNg4APt3cZig+NfSd3plrCIIOpR/zVnZAoGAJTVFR87M+NmPloycGXlo\n9p6CruaEH9GyX644n7T4HLUUumEZDb92Hf3CuqxsEi0rTwAYvLwp8Zpu2+xB84b2\nDUO4b+RftoaqzFUsxTJATIZqDUhDtIrIkE8VO1wBFBast7aXUl2eaOLKA5BBahFk\nZr+PQTHRPjiWJLby8aV+7m0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jordanrodrigues@pelagic-firefly-244314.iam.gserviceaccount.com",
+  "client_id": "108318766455777955073",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jordanrodrigues%40pelagic-firefly-244314.iam.gserviceaccount.com"
+}
