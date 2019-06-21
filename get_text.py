@@ -1,7 +1,11 @@
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import PyPDF2
-import io
 import requests
+import io
+
+all_urls = ['https://literature.rockwellautomation.com/idc/groups/literature/documents/rn/1441-rn002_-en-p.pdf',
+        'https://literature.rockwellautomation.com/idc/groups/literature/documents/in/800mr-in001_-en-e.pdf',
+        'https://literature.rockwellautomation.com/idc/groups/literature/documents/td/1500-td220_-en-e.pdf']
 
 url = 'https://literature.rockwellautomation.com/idc/groups/literature/documents/rn/1441-rn002_-en-p.pdf'
 all_content = [] # List to hold strings from all pages in a PDF
