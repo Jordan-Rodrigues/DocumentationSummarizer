@@ -1,26 +1,8 @@
-<script>
-  function startDictation() {
-    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+function nameFade() {
+  console.log("test")
+  $(".name").hide().fadeIn(2500)
 
-      var recognition = new webkitSpeechRecognition();
+  $(".bold").animate()
+}
 
-      recognition.continuous = false;
-      recognition.interimResults = false;
-
-      recognition.lang = "en-US";
-      recognition.start();
-
-      recognition.onresult = function(e) {
-        document.getElementById('transcript').value
-                                 = e.results[0][0].transcript;
-        recognition.stop();
-        document.getElementById('labnol').submit();
-      };
-
-      recognition.onerror = function(e) {
-        recognition.stop();
-      }
-
-    }
-  }
-</script>
+$(document).ready(nameFade())

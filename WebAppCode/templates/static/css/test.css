@@ -1,15 +1,171 @@
 body {
-    background-color: #dedede;
     margin: 0;
+    height: 100%;
+}
+
+html {
+    background: url(Images/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.button {
+    background-color: #eeeeee;
+    width: 15%;
+    margin: auto;
+    position: relative;
+    bottom: 20vh;
+    border: 3px solid #eeeeee;
+    padding: 0px;
+    border-radius: 2%;
+    margin-bottom: 0;
+    box-shadow: 10px 10px 5px black;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #AE1A26;
+}
+
+.button:focus {
+    cursor: pointer;
+    background-color: #AE1A26;
+    box-shadow: 0px 0px 0px black;
+}
+
+.button:hover .buttonText{
+    cursor: pointer;
+    color: #eeeeee;
+}
+
+.buttonText {
+    text-align: center;
+    font-family: dense;
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: bolder;
+    margin-bottom: 0;
+    color: #AE1A26;
+}
+
+.desc {
+    text-align: center;
+    /*font-family: dense , sans-serif;*/
+    font-family: "dense", sans-serif;
+    color: #eeeeee;
+    font-size: 2em;
+    /*text-shadow: 2px 2px #a8a8a8; */
+    position: relative;
+    bottom: 26vh;
+    letter-spacing: .04em;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0;
+
+}
+
+.greyshade {
+    background-color: black;
+    opacity: .3;
+    width: 100%;
+    height: 13vh;
+    margin-bottom: 0;
 }
 
 .header {
-    background-color: #c10000;
-    margin: 0;
+    text-align: center;
+    /*font-family: dense , sans-serif;*/
+    font-family: "dense", sans-serif;
+    color: #eeeeee;
+    font-size: 5.75em;
+    /*text-shadow: 2px 2px #a8a8a8; */
+    opacity: 1;
+    position: relative;
+    bottom: 22vh;
+    letter-spacing: .04em;
+    word-spacing: .25em;
+    margin-bottom: 0;
 }
 
-.headerText {
-    color: #eeeeee;
-    margin-top: 0;
+.name {
     margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    font-family: dense;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+
+.people {
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 2%;
+    margin-top: 5%;
+}
+
+.problem {
+    text-align: center;
+    font-family: "dense";
+    color: #eeeeee;
+    font-size: 3em;
+    position: relative;
+    bottom: 24vh;
+    letter-spacing: .02em;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+
+@font-face {
+    font-family: "dense";
+    src: url(Fonts/Dense-Regular.otf);
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 6px 10px 0 #373738;
+    transition: 0.3s;
+    background-color: #eeeeee;
+    width: 10%;
+    position: relative;
+    bottom: 24vh;
+    height: 25vh;
+    margin-left: 4%;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.headshot {
+    width: 85%;
+    height: 20vh;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 10px 10px gray;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#solution {
+    position: relative;
+    bottom: 24vh;
+}
+
+/*--------------------------------------PAGE 2----------------------------------*/
+
+.robot {
+    width: 50%;
+    height: 50vh;
 }
