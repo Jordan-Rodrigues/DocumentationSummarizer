@@ -1,8 +1,15 @@
 function nameFade() {
   console.log("test")
   $(".name").hide().fadeIn(2500)
+  setTimeout(animateBold, 1000);
+}
 
-  $(".bold").animate()
+function animateBold() {
+  $(".bold").animate({
+    fontSize: "1.4em"
+  }, 4000)
 }
 
 $(document).ready(nameFade())
+
+
