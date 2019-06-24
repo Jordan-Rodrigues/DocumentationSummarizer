@@ -153,12 +153,11 @@ html {
 .botBubble {
     width: 70%;
     background-color: #AE1A26;
-    height: 4vh;
     border-radius: 20px;
     display: inline-block;
-    position: relative;
-    top: 1vh;
     border: 3px solid #d6d6d6;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .botIcon {
@@ -166,23 +165,23 @@ html {
     height: 10%;
     margin-right: 2%;
     margin-left: 2%;
-    position:relative;
-    bottom: 2vh;
+    position: relative;
+    top: 1.3vh;
 }
 
 .botMessage {
     color: #eeeeee;
     font-family: "dense", sans-serif;
-    position: relative;
-    bottom: 5vh;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     margin-left: 5%;
     font-size: 1.5em;
-    margin-bottom: 0;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .botSection {
-    margin-top: 2%;
     margin-left: 1%;
 }
 
@@ -190,12 +189,10 @@ html {
     display: inline-block;
     width: 70%;
     background-color: #bf312f;
-    height: 4vh;
     border-radius: 20px;
     display: inline-block;
     border: 3px solid #d6d6d6;
-    position: relative;
-    top: 1vh;
+    margin-bottom: 5%;
 }
 
 .userIcon {
@@ -204,19 +201,18 @@ html {
     margin-right: 2%;
     margin-left: 2%;
     position: relative;
-    bottom: 2vh;
+    top: 1.5vh;
 }
 
 .userMessage {
     text-align: right;
     color: #eeeeee;
     font-family: "dense", sans-serif;
-    position: relative;
-    bottom: 5vh;
-    letter-spacing: 0.05em;
-    margin-right: 5%;
+    letter-spacing: 0.06em;
     font-size: 1.5em;
-    margin-bottom: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .userSection {
@@ -225,6 +221,7 @@ html {
 }
 
 .chatBreaker {
+    margin-top: 2%;
     width: 95%;
     margin: auto;
 }
@@ -268,6 +265,7 @@ html {
     width: 100%;
     height: 60vh;
     border: 2px solid rgba(180,180,180,1);
+    overflow: auto;
 }
 
 .chatBottom {

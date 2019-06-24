@@ -11,7 +11,7 @@ function animateBold() {
 }
 
 function pageSwitcher() {
-  window.location = "/Chatbot"
+  $("html").load("/Chatbot");
 }
 
 $(document).ready(nameFade())

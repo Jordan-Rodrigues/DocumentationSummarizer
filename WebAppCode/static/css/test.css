@@ -25,8 +25,6 @@ html {
     background-color: #eeeeee;
     width: 15%;
     margin: auto;
-    position: relative;
-    bottom: 20vh;
     border: 3px solid #eeeeee;
     padding: 0px;
     border-radius: 2%;
@@ -67,21 +65,11 @@ html {
     color: #eeeeee;
     font-size: 2em;
     /*text-shadow: 2px 2px #a8a8a8; */
-    position: relative;
-    bottom: 26vh;
     letter-spacing: .04em;
     width: 60%;
     margin: auto;
     margin-bottom: 0;
 
-}
-
-.greyshade {
-    background-color: black;
-    opacity: .3;
-    width: 100%;
-    height: 13vh;
-    margin-bottom: 0;
 }
 
 .header {
@@ -90,11 +78,12 @@ html {
     color: #eeeeee;
     font-size: 5.75em;
     opacity: 1;
-    position: relative;
-    bottom: 22vh;
     letter-spacing: .04em;
     word-spacing: .25em;
     margin-bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    margin-top: 0;
 }
 
 .name {
@@ -109,9 +98,8 @@ html {
 .people {
     display: block;
     margin: auto;
-    position: relative;
     right: 2%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .problem {
@@ -119,8 +107,6 @@ html {
     font-family: "dense";
     color: #eeeeee;
     font-size: 3em;
-    position: relative;
-    bottom: 24vh;
     letter-spacing: .02em;
     margin-bottom: 2%;
     margin-top: 5%;
@@ -139,8 +125,6 @@ html {
     transition: 0.3s;
     background-color: #eeeeee;
     width: 10%;
-    position: relative;
-    bottom: 24vh;
     height: 25vh;
     margin-left: 4%;
     display: inline-block;
@@ -162,8 +146,6 @@ html {
 }
 
 #solution {
-    position: relative;
-    bottom: 24vh;
 }
 
 /*--------------------------------------PAGE 2----------------------------------*/
@@ -171,12 +153,11 @@ html {
 .botBubble {
     width: 70%;
     background-color: #AE1A26;
-    height: 4vh;
     border-radius: 20px;
     display: inline-block;
-    position: relative;
-    top: 1vh;
     border: 3px solid #d6d6d6;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .botIcon {
@@ -184,23 +165,23 @@ html {
     height: 10%;
     margin-right: 2%;
     margin-left: 2%;
-    position:relative;
-    bottom: 2vh;
+    position: relative;
+    top: 1.3vh;
 }
 
 .botMessage {
     color: #eeeeee;
     font-family: "dense", sans-serif;
-    position: relative;
-    bottom: 5vh;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     margin-left: 5%;
     font-size: 1.5em;
-    margin-bottom: 0;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .botSection {
-    margin-top: 2%;
     margin-left: 1%;
 }
 
@@ -208,12 +189,10 @@ html {
     display: inline-block;
     width: 70%;
     background-color: #bf312f;
-    height: 4vh;
     border-radius: 20px;
     display: inline-block;
     border: 3px solid #d6d6d6;
-    position: relative;
-    top: 1vh;
+    margin-bottom: 5%;
 }
 
 .userIcon {
@@ -222,19 +201,18 @@ html {
     margin-right: 2%;
     margin-left: 2%;
     position: relative;
-    bottom: 2vh;
+    top: 1.5vh;
 }
 
 .userMessage {
     text-align: right;
     color: #eeeeee;
     font-family: "dense", sans-serif;
-    position: relative;
-    bottom: 5vh;
-    letter-spacing: 0.05em;
-    margin-right: 5%;
+    letter-spacing: 0.06em;
     font-size: 1.5em;
-    margin-bottom: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .userSection {
@@ -243,6 +221,7 @@ html {
 }
 
 .chatBreaker {
+    margin-top: 2%;
     width: 95%;
     margin: auto;
 }
@@ -286,6 +265,7 @@ html {
     width: 100%;
     height: 60vh;
     border: 2px solid rgba(180,180,180,1);
+    overflow: auto;
 }
 
 .chatBottom {
