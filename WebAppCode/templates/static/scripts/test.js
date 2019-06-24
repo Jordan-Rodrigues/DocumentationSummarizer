@@ -10,6 +10,8 @@ function animateBold() {
   }, 4000)
 }
 
+function pageSwitcher() {
+  $("html").load("/Chatbot");
+}
+
 $(document).ready(nameFade())
-
-
