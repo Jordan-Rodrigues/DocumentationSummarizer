@@ -37,7 +37,10 @@
                 <input class="input" type="text" value="" onblur="this.placeholder = '   Enter message...'"
                     onfocus="this.placeholder = ''" placeholder="   Enter message..." id="inputMessage" />
                 <input type="submit" hidden>
+                <span id="final_span" class="final"></span>
+                <span id="interim_span" class="interim"></span>
             </form>
+            <img onclick=textSpeech() class="micPic" src="static/css/Images/Mic.png">
             <div class="sendButton">
                 <img class="send" src="static/css/Images/send.png">
             </div>
