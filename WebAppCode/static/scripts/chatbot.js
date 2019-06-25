@@ -18,8 +18,9 @@ $(".sendButton").click(function () {
   setTimeout(chatScroll, 2000)
 })
 
-$("#Target").submit(function (e) {
+$("#target").submit(function (e) {
   e.preventDefault()
+  return false;
 })
 
 

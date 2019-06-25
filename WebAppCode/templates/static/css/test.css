@@ -4,7 +4,7 @@ body {
 }
 
 form {
-    width: 70%;
+    width: 100%;
     margin-right: 13%;
     display: inline-block;
 }
@@ -145,7 +145,18 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#solution {
+#ROKSubmit {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family: dense;
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: #AE1A26;
+}
+
+#ROKSubmit:hover {
+    color: #eeeeee;
 }
 
 /*--------------------------------------PAGE 2----------------------------------*/
@@ -327,6 +338,10 @@ html {
     margin-bottom: 0;
 }
 
+#target {
+    width: 70% !important;
+}
+
 .input {
     margin: auto;
     display: inline-block;
@@ -361,6 +376,7 @@ html {
     border: 3px solid rgba(180,180,180,1);
     position: relative; 
     top: 5%;
+    cursor: pointer;
 }
 
 .send{

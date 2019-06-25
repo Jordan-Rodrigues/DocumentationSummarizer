@@ -17,6 +17,11 @@ app = Flask(__name__)
 def home():
    return render_template("home.html")
 
+@app.route('/', methods=["POST", "GET"])
+def pageRoute():
+    if request.method == 'POST':
+        return redirect(url_for("results"))
+
 
 @app.route('/Chatbot')
 def results():
