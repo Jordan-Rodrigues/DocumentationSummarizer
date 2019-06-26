@@ -27,23 +27,29 @@ def get_text(url):
         page = read_pdf.getPage(pages)
         page_content = page.extractText().replace('\n', " ") # Extracts text from current page & cleans up newlines
         all_content.append(page_content.encode('utf-8')) # Adds string of text from current page to list
-        #if(page.extractText().find(" ")):
-        #    print(" ")
     return number_of_pages, all_content
 
-#This function will take in the word bytes from the PDF and convert it to a string and then split it off into single words
-#so we can then count the number of words it has...
+#This function will take in the word bytes from the PDF and convert it to a string and then split it off into a list of words
 def convert_to_string(words):
     count = 0
     words = str(words)
     print(type(words))
     #Line 41: this will split the string even further into single words
     wordList = re.sub("[^\w]", " ", words).split() #This line of code was created by Username: Bryan; Founded on stackoverflow.com.
-    print(wordList)
-    for index in range(0, len(wordList)):
-        count+=1
-    return count
+    return wordList
 
 
 number_of_pages, all_words = get_text(url)
-print(convert_to_string(all_words[0]))
+
+#Use a new list to hold all of the split words so we can later count how many words are actually there.
+split_words = []
+for i in range(0, len(all_words)):
+    split_words += convert_to_string(all_words[i])
+
+
+#Counts number of words are in the pdf
+count = 0
+for i in range(0, len(split_words)):
+    count += 1
+#prints the count at the end of iteration
+print(count)
